@@ -56,6 +56,9 @@
   @media (max-width:520px){.tag{letter-spacing:.1em;font-size:.8rem}.tag::after{display:none}.tag::before{width:18px}}
   .hero h1{font-size:clamp(2rem,5.2vw,3.4rem);max-width:820px}
   .hero h1 span{color:var(--blue)}
+  .hero p.motto{margin:-4px 0 20px;padding-left:14px;border-left:4px solid var(--blue);color:var(--blue);font-weight:700;font-size:clamp(1.1rem,2.3vw,1.4rem);line-height:1.35}
+  .hero p.exp{display:inline-flex;align-items:center;gap:8px;margin:0 0 20px;padding:7px 14px;border-radius:999px;background:var(--sky);color:var(--navy);font-weight:700;font-size:.98rem}
+  .hero p.exp svg{width:18px;height:18px;stroke:var(--blue);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
   .hero p.lead{font-size:clamp(1.05rem,2vw,1.25rem);color:var(--muted);max-width:720px;margin:0 0 28px}
   .actions{display:flex;flex-wrap:wrap;gap:12px}
   .facts{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:48px}
@@ -143,14 +146,16 @@
     <div class="wrap">
       <div class="tag">Сервис инженерных систем</div>
       <h1>Диагностика и ремонт <span>технически сложного оборудования</span></h1>
-      <p class="lead">Выполняем диагностику, ремонт и устранение причин неисправностей промышленного оборудования: станков с ЧПУ, конвейеров, производственных линий и установок, а также автоматических ворот и шлагбаумов. Оказываем услуги по внутрисхемному ремонту электрооборудования.</p>
+      <p class="motto">90% успеха ремонта — это компетентная диагностика</p>
+      <p class="exp"><svg viewBox="0 0 24 24"><circle cx="12" cy="9" r="6"/><path d="M8.5 14l-1.5 7 5-3 5 3-1.5-7"/></svg>Опыт специалистов — более 20 лет</p>
+      <p class="lead">Выполняем диагностику, ремонт и устранение причин неисправностей промышленного оборудования: станков с ЧПУ, конвейеров, производственных линий и агрегатов, а также автоматических ворот и шлагбаумов. Оказываем услуги по внутрисхемному ремонту электрооборудования.</p>
       <div class="actions">
         <a class="btn" href="tel:+79935163643">Позвонить</a>
         <a class="btn ghost" href="#uslugi">Направления работ</a>
       </div>
       <div class="facts">
         <div class="fact"><b>Станки ЧПУ</b><span>электроника, приводы, автоматика</span></div>
-        <div class="fact"><b>Промоборудование</b><span>конвейеры, линии, установки</span></div>
+        <div class="fact"><b>Промоборудование</b><span>конвейеры, линии, агрегаты</span></div>
         <div class="fact"><b>Внутрисхемный ремонт</b><span>электрооборудование на уровне компонентов</span></div>
         <div class="fact"><b>Ворота и шлагбаумы</b><span>CAME, Nice, DoorHan, FAAC, Hörmann</span></div>
       </div>
@@ -160,7 +165,7 @@
   <section id="uslugi" class="alt">
     <div class="wrap">
       <h2>Направления работ</h2>
-      <p class="muted">Компетенции наших специалистов позволяют выполнять ремонт технически сложного оборудования в полном объёме: от диагностики и поиска причины неисправности до восстановления электрооборудования на уровне компонентов. Большинство работ выполняем собственными силами с применением профессионального диагностического оборудования.</p>
+      <p class="muted">Компетенции наших специалистов позволяют выполнять ремонт технически сложного оборудования в полном объёме: от диагностики и поиска причины неисправности до восстановления электрооборудования на уровне компонентов. Большинство работ выполняем собственными силами с применением профессионального диагностического оборудования. Работаем как с аналоговыми, так и с цифровыми системами управления.</p>
       <div class="grid3">
         <div class="card">
           <div class="ico"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M7 20h10M12 16v4M7 8h4M7 11h7"/></svg></div>
@@ -176,10 +181,34 @@
           <div class="ico"><svg viewBox="0 0 24 24"><circle cx="6" cy="16" r="3"/><circle cx="18" cy="16" r="3"/><path d="M6 13h12M6 19h12M9 9V5h6v4"/></svg></div>
           <h3>Промышленное оборудование</h3>
           <ul>
-            <li>конвейеры и производственные линии</li>
-            <li>прессы, установки, станки без ЧПУ</li>
+            <li>производственные линии, конвейеры, агрегаты</li>
+            <li>прессы, станки без ЧПУ</li>
             <li>щиты и шкафы управления</li>
             <li>поиск неисправностей по схемам</li>
+          </ul>
+        </div>
+        <div class="card">
+          <div class="ico"><svg viewBox="0 0 24 24"><path d="M13 2L4 14h7l-1 8 9-12h-7z"/></svg></div>
+          <h3>Силовая электроника</h3>
+          <ul>
+            <li>преобразователи постоянного и переменного тока</li>
+            <li>системы возбуждения синхронных генераторов и двигателей</li>
+          </ul>
+        </div>
+        <div class="card">
+          <div class="ico"><svg viewBox="0 0 24 24"><path d="M4 18c2-2 2-4 0-6s-2-4 0-6M10 18c2-2 2-4 0-6s-2-4 0-6M16 18c2-2 2-4 0-6s-2-4 0-6"/></svg></div>
+          <h3>Индукционный нагрев</h3>
+          <ul>
+            <li>оборудование индукционного нагрева</li>
+            <li>нагревательные устройства</li>
+          </ul>
+        </div>
+        <div class="card">
+          <div class="ico"><svg viewBox="0 0 24 24"><path d="M4 16a8 8 0 1 1 16 0"/><path d="M12 16l4-5"/><path d="M4 20h16"/></svg></div>
+          <h3>КИП и измерительные системы</h3>
+          <ul>
+            <li>измерение температуры, давления, расстояния, расхода</li>
+            <li>весоизмерительные системы</li>
           </ul>
         </div>
         <div class="card" id="vorota">
